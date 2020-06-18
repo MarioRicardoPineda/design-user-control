@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Web - control de usuarios</title>
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Fuente 'Lato' oficial del sitio -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos css del proyecto -->
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav white">
+      <div class="row">
+        <section class="col s12 l10 offset-l2">
+          <div class="container">
+
+            <ul class="left">
+              <li>
+                <!-- Menu sidebar -->
+                <a href="#" data-target="slide-out" class="sidenav-trigger dark-text ">
+                  <i class="material-icons">menu</i>
+                </a>
+              </li>
+              <li>
+                <a class="dark-text logo" href="/">App Web</a>
+              </li>
+            </ul>
+
+            <ul class="right">
+              <li>
+                <a href="login.html" class="dark-text btn white waves-effect">
+                  <i class="material-icons right">login</i>
+                  cerrar sesión
+                </a>
+              </li>
+            </ul>
+
+          </div>
+
+        </section>
+      </div>
+
+    </nav>
+  </header>
+
+  <!-- dashbord Sidebar -->
+  <aside class="sidebar">
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+
+      <!-- Banner del usuario -->
+      <li>
+        <div class="user-view">
+
+          <div class="background gradiente">
+            <!-- <img src="img/luke-chesser.jpg"> -->
+          </div>
+          <a href="#user" class="icon-default">
+            <span class="segundo-color icon-default circulo">R</span>
+          </a>
+          <a href="#name">
+            <span class="white-text name center">Ricardo Pineda</span>
+          </a>
+          <a href="#">
+            <span class="white-text name center"> <i class="material-icons">keyboard_arrow_down</i> </span>
+          </a>
+
+        </div>
+      </li>
+
+      <!-- Buscador -->
+      <li>
+        <div class="nav-wrapper">
+          <form>
+            <div class="input-field">
+
+              <input id="search" type="search" placeholder="Buscar">
+              <label class="label-icon" for="search">
+                <i class="material-icons">search</i>
+              </label>
+
+              <i class="material-icons">close</i>
+            </div>
+          </form>
+        </div>
+      </li>
+
+      <li>
+        <div class="divider"></div>
+      </li>
+
+      <!-- Enlaces de administración -->
+      <li>
+        <a class="subheader">Administración</a>
+      </li>
+      <!-- add person -->
+      <li>
+        <a class="active-dev" href="/">
+          <i class="material-icons">person_add</i>
+          <span class="dark-text">Registro de Usuarios</span>
+        </a>
+      </li>
+
+      <!-- list persons -->
+      <li>
+        <a class="" href="lista.html">
+          <i class="material-icons">group</i>
+          <span class="dark-text">Lista de Usuarios</span>
+        </a>
+      </li>
+
+      <li>
+        <a class="footer-buttom" href="#!">
+          <span class="gray-text">App Web 2020 &copy;</span>
+        </a>
+      </li>
+
+    </ul>
+    <!-- Menu sidebar -->
+    <!-- <a href="#" data-target="slide-out" class="sidenav-trigger dark-text">
+      <i class="material-icons ">menu</i>
+    </a> -->
+
+  </aside>
+
+  <!-- Contenido principal -->
+  <main class="main">
+
+    <div class="row">
+      <form class="col s12 l10 offset-l2">
+        <!-- Card de formularios -->
+        <div class="container">
+          <h2 class="dark-text">Ingreso de nueva Persona</h2>
+
+          <div class="row">
+            <!-- Nombres -->
+            <section class="col s12 l6">
+              <article class="card">
+                <h3 class="primer-color-text">Nombres</h3>
+
+                <div class="input-field">
+                  <input type="text" name="nombre1" id="nombre1">
+                  <label for="nombre1">Primer Nombre:</label>
+                </div>
+
+                <div class="input-field">
+                  <input type="text" name="nombre2" id="nombre2">
+                  <label for="nombre2">Segundo Nombre:</label>
+                </div>
+
+              </article>
+            </section>
+
+             <!-- Apellidos -->
+             <section class="col s12 l6">
+              <article class="card">
+                <h3 class="primer-color-text">Apellidos</h3>
+
+                <div class="input-field">
+                  <input type="text" name="apellido1" id="apellido1">
+                  <label for="apellido1">Primer apellido:</label>
+                </div>
+
+                <div class="input-field">
+                  <input type="text" name="apellido2" id="apellido2">
+                  <label for="apellido2">Segundo apellido:</label>
+                </div>
+
+              </article>
+            </section>
+           
+            <!-- informacion Personal -->
+            <section class="col s12 l6">
+              <article class="card">
+                <h3 class="primer-color-text">Info. Personal</h3>
+
+                <div class="input-field">
+                  <select name="sexo" id="sexo">
+                    <option value="" disabled>Seleccione una opción</option>
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                  </select>
+                  <label for="sexo">sexo</label>
+                </div>
+
+                <div class="input-field">
+                  <input type="text" name="nacimiento" id="nacimiento" class="datepicker">
+                  <label for="nacimiento">Fecha de nacimiento</label>
+                </div>
+
+              </article>
+            </section>
+
+            <!-- Informacion adicional -->
+            <section class="col s12 l6">
+              <article class="card">
+                <h3 class="primer-color-text">Info. Adicional</h3>
+
+                <div class="input-field">
+                  <textarea name="adicional" id="adicional" style="height: 70px !important;"></textarea>
+                </div>
+
+                <div class="center">
+                  <button class="btn primer-color" type="button">
+                    <i class="material-icons right">send</i>
+                    <span> guardar persona </span>
+                  </button>
+                </div>
+
+              </article>
+            </section>
+          </div>
+          
+        </div>
+        
+      </form>
+    </div>
+    
+
+  </main>
+
+  <!-- Main Footer -->
+  <footer class="footer"></footer>
+
+
+  <!-- Script js del proyecto -->
+  <script src="js/materialize.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

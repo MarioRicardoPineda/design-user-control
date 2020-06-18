@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Web - control de usuarios</title>
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Fuente 'Lato' oficial del sitio -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos css del proyecto -->
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav white">
+      <div class="row">
+        <section class="col s12 l10 offset-l2">
+          <div class="container">
+
+            <ul class="left">
+              <li>
+                <!-- Menu sidebar -->
+                <a href="#" data-target="slide-out" class="sidenav-trigger dark-text ">
+                  <i class="material-icons">menu</i>
+                </a>
+              </li>
+              <li>
+                <a class="dark-text logo" href="/">App Web</a>
+              </li>
+            </ul>
+
+            <ul class="right">
+              <li>
+                <a href="login.html" class="dark-text btn white waves-effect">
+                  <i class="material-icons right">login</i>
+                  cerrar sesión
+                </a>
+              </li>
+            </ul>
+
+          </div>
+
+        </section>
+      </div>
+
+    </nav>
+  </header>
+
+  <!-- dashbord Sidebar -->
+  <aside class="sidebar">
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+
+      <!-- Banner del usuario -->
+      <li>
+        <div class="user-view">
+
+          <div class="background gradiente">
+            <!-- <img src="img/luke-chesser.jpg"> -->
+          </div>
+          <a href="#user" class="icon-default">
+            <span class="segundo-color icon-default circulo">R</span>
+          </a>
+          <a href="#name">
+            <span class="white-text name center">Ricardo Pineda</span>
+          </a>
+          <a href="#">
+            <span class="white-text name center"> <i class="material-icons">keyboard_arrow_down</i> </span>
+          </a>
+
+        </div>
+      </li>
+
+      <!-- Buscador -->
+      <li>
+        <div class="nav-wrapper">
+          <form>
+            <div class="input-field">
+
+              <input id="search" type="search" placeholder="Buscar">
+              <label class="label-icon" for="search">
+                <i class="material-icons">search</i>
+              </label>
+
+              <i class="material-icons">close</i>
+            </div>
+          </form>
+        </div>
+      </li>
+
+      <li>
+        <div class="divider"></div>
+      </li>
+
+      <!-- Enlaces de administración -->
+      <li>
+        <a class="subheader">Administración</a>
+      </li>
+      <!-- add person -->
+      <li>
+        <a class="" href="/">
+          <i class="material-icons">person_add</i>
+          <span class="dark-text">Registro de Usuarios</span>
+        </a>
+      </li>
+
+      <!-- list persons -->
+      <li>
+        <a class="active-dev" href="#!">
+          <i class="material-icons">group</i>
+          <span class="dark-text">Lista de Usuarios</span>
+        </a>
+      </li>
+
+      <li>
+        <a class="footer-buttom" href="lista.html">
+          <span class="gray-text">App Web 2020 &copy;</span>
+        </a>
+      </li>
+
+    </ul>
+    <!-- Menu sidebar -->
+    <!-- <a href="#" data-target="slide-out" class="sidenav-trigger dark-text">
+      <i class="material-icons ">menu</i>
+    </a> -->
+
+  </aside>
+
+  <!-- Contenido principal -->
+  <main class="main">
+
+    <div class="container">
+      <div class="row">
+        <section class="col s12 l10 offset-l2">
+          
+          <h2 class="dark-text">Lista de Usuarios</h2>
+
+          <!-- Lista de usuarios -->
+          <ul class="collection">
+            <li class="collection-item avatar">
+              <i class="material-icons circle segundo-color">account_circle</i>
+              <span class="title">Ricardo Pineda</span>
+              <p>Fecha Naci: 03/03/1990<br> 
+                Estudiante | sexo: Masculino
+              </p>
+              <a href="#!" class="secondary-content"><i class="material-icons">more_vert</i></a>
+            </li>
+            <li class="collection-item avatar">
+              <i class="material-icons circle segundo-color">account_circle</i>
+              <span class="title">Ricardo Pineda</span>
+              <p>Fecha Naci: 03/03/1990<br> 
+                Estudiante | sexo: Masculino
+              </p>
+              <a href="#!" class="secondary-content"><i class="material-icons">more_vert</i></a>
+            </li>
+            <li class="collection-item avatar">
+              <i class="material-icons circle segundo-color">account_circle</i>
+              <span class="title">Ricardo Pineda</span>
+              <p>Fecha Naci: 03/03/1990<br> 
+                Estudiante | sexo: Masculino
+              </p>
+              <a href="#!" class="secondary-content"><i class="material-icons">more_vert</i></a>
+            </li>
+            <li class="collection-item avatar">
+              <i class="material-icons circle segundo-color">account_circle</i>
+              <span class="title">Ricardo Pineda</span>
+              <p>Fecha Naci: 03/03/1990<br> 
+                Estudiante | sexo: Masculino
+              </p>
+              <a href="#!" class="secondary-content"><i class="material-icons">more_vert</i></a>
+            </li>
+            <li class="collection-item avatar">
+              <i class="material-icons circle segundo-color">account_circle</i>
+              <span class="title">Ricardo Pineda</span>
+              <p>Fecha Naci: 03/03/1990<br> 
+                Estudiante | sexo: Masculino
+              </p>
+              <a href="#!" class="secondary-content"><i class="material-icons">more_vert</i></a>
+            </li>
+            <li class="collection-item avatar">
+              <i class="material-icons circle segundo-color">account_circle</i>
+              <span class="title">Ricardo Pineda</span>
+              <p>Fecha Naci: 03/03/1990<br> 
+                Estudiante | sexo: Masculino
+              </p>
+              <a href="#!" class="secondary-content"><i class="material-icons">more_vert</i></a>
+            </li>
+
+          </ul>
+        </section>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Main Footer -->
+  <footer class="footer"></footer>
+
+
+  <!-- Script js del proyecto -->
+  <script src="js/materialize.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

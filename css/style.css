@@ -1,0 +1,258 @@
+
+:root{
+  --primer-color: #8F47EE;
+  --segundo-color: #31D9E4;
+  --tercer-color: #7AACEF;
+  --cuarto-color: #9CF0F8;
+  --gray-text: #BBBBBB;
+  --dark-text: #3D3D3D;
+}
+
+body{
+  font-family: 'Lato', sans-serif !important;
+  background-color: #f3f3f3;
+}
+i{
+  user-select: none;
+}
+
+/* colores solidos */
+.primer-color{
+  background-color: var(--primer-color) !important;
+}
+.segundo-color{
+  background-color: var(--segundo-color) !important;
+}
+.tercero-color{
+  background-color: var(--tercer-color) !important;
+}
+.cuarto-color{
+  background-color: var(--cuarto-color) !important;
+}
+
+/* Colores para textos */
+.gray-text{
+  color: var(--gray-text) !important;
+}
+.dark-text{
+  color: var(--dark-text) !important;
+}
+
+.primer-color-text{
+  color: var(--primer-color) !important;
+}
+.segundo-color-text{
+  color: var(--segundo-color) !important;
+}
+.tercero-color-text{
+  color: var(--tercer-color) !important;
+}
+.cuarto-color-text{
+  color: var(--cuarto-color) !important;
+}
+
+/* Gradientes */
+.gradiente{
+  background-image: linear-gradient(
+    to left, var(--primer-color),
+    var(--segundo-color) );
+}
+.gradiente-deg{
+  background-image: linear-gradient(
+    -45deg, var(--primer-color),
+    var(--segundo-color) );
+}
+
+/* Clases propias del diseño */
+
+.active-dev{
+  position: relative;
+  background-color: rgba(156, 240, 248, .3);
+}
+
+.active-dev::before{
+  content:"";
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 5px;
+  height: 50px;
+  background-image: linear-gradient(
+    to top, var(--primer-color), var(--primer-color) 30%,
+    var(--segundo-color) );
+}
+
+.footer-buttom{
+  position: fixed;
+  bottom: 65px;
+  width: 100%;
+  text-align: center;
+}
+
+.logo{
+  font-size: 2.2rem;
+}
+
+main.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 64px);
+}
+
+.login-container{
+  display: flex;
+  height: 29rem;
+  box-shadow: 0 10px 15px -4px rgba(61, 61, 61, .2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* sidebar del login */
+.login-info{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-image: linear-gradient(
+    -45deg,
+    var(--primer-color),
+    var(--segundo-color) );
+  color: #fff;
+  padding: 2rem;
+}
+.info-image{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.info-image img{
+  width: 100%;
+  display: block;
+}
+.info-text {
+  text-align: center;
+}
+.info-text h3, .login-fields h3{
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.login-fields h3 {
+  margin-bottom: 2.5rem;
+}
+/* Campos de login email, password */
+.login-fields{
+  flex:1;
+  padding: 2rem;
+}
+
+.login-body
+.input-field{
+  margin-bottom: 2.5rem;
+}
+.button-container{
+  margin-bottom: 2rem ;
+}
+
+.icon{
+  position: relative;
+  left: 90%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px){
+  .login-info {
+    display: none;
+  }
+}
+
+/* el icono por defecto será la primera letra del nombre de usuario */
+.block{
+  display: block;
+}
+.icon-default{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.circulo{
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.circulo-small{
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+/* Clases de materializes modificadas */
+
+.name{
+  font-size: 1.2rem !important;
+}
+.card{
+  position: relative;
+  padding: .3rem 2rem 1.2rem 2rem;
+}
+.card::before{
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-image: linear-gradient(
+    to right, var(--primer-color), var(--primer-color) 30%,
+    var(--segundo-color) );
+}
+
+.card h3 {
+  display: inline-block;
+  font-size: 2rem !important;
+  margin-bottom: 1rem !important;
+}
+
+nav{
+  box-shadow: 0 3px 10px 0 rgba(61, 61, 61, .2);
+}
+
+/* Para cambiar los colores por defecto de los formularios */
+
+  /* label color */
+  .input-field label {
+    color: var(--gray-text) !important;
+  }
+  /* label focus color */
+  .input-field input:focus + label {
+    color: var(--primer-color) !important;
+  }
+  /* label underline focus color */
+  .input-field input:focus {
+    border-bottom: 1px solid var(--primer-color) !important;
+    box-shadow: 0 1px 0 0 var(--primer-color) !important;
+  }
+  /* valid color */
+  .input-field input.valid {
+    border-bottom: 1px solid #000 !important;
+    box-shadow: 0 1px 0 0 #000 !important;
+  }
+  /* invalid color */
+  .input-field input.invalid {
+    border-bottom: 1px solid #000 !important;
+    box-shadow: 0 1px 0 0 #000 !important;
+  }
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+    color: var(--primer-color) !important;
+  }
+
+  .secondary-content{
+    color: var(--segundo-color) !important;
+  }
