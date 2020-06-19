@@ -21,6 +21,8 @@ addEventListener('DOMContentLoaded', _ => {
       weekdaysAbbrev: ["D","L","M","M","J","V","S"]
     }
   });
+
+  location.href="https://marioricardopineda.github.io/design-user-control/login.html"
 });
 
 // Mostrar contraseña
