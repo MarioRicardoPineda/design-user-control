@@ -86,7 +86,7 @@
           <form>
             <div class="input-field">
 
-              <input id="search" type="search" placeholder="Buscar">
+              <input required id="search" type="search" placeholder="Buscar">
               <label class="label-icon" for="search">
                 <i class="material-icons">search</i>
               </label>
@@ -139,7 +139,7 @@
   <main class="main">
 
     <div class="row">
-      <form class="col s12 l10 offset-l2">
+      <form class="col s12 l10 offset-l2" id="form">
         <!-- Card de formularios -->
         <div class="container">
           <h2 class="dark-text">Ingreso de nueva Persona</h2>
@@ -151,13 +151,15 @@
                 <h3 class="primer-color-text">Nombres</h3>
 
                 <div class="input-field">
-                  <input type="text" name="nombre1" id="nombre1">
                   <label for="nombre1">Primer Nombre:</label>
+                  <input class="validate" required type="text" name="nombre1" id="nombre1">
+                  <span class="helper-text" date-success="Lleno correctamente" data-error="Campo requerido"></span>
                 </div>
 
                 <div class="input-field">
-                  <input type="text" name="nombre2" id="nombre2">
                   <label for="nombre2">Segundo Nombre:</label>
+                  <input class="validate" required type="text" name="nombre2" id="nombre2">
+                  <span class="helper-text" date-success="Lleno correctamente" data-error="Campo requerido"></span>
                 </div>
 
               </article>
@@ -169,13 +171,15 @@
                 <h3 class="primer-color-text">Apellidos</h3>
 
                 <div class="input-field">
-                  <input type="text" name="apellido1" id="apellido1">
+                  <input required class="validate" type="text" name="apellido1" id="apellido1">
                   <label for="apellido1">Primer apellido:</label>
+                  <span class="helper-text" date-success="Lleno correctamente" data-error="Campo requerido"></span>
                 </div>
 
                 <div class="input-field">
-                  <input type="text" name="apellido2" id="apellido2">
+                  <input required class="validate" type="text" name="apellido2" id="apellido2">
                   <label for="apellido2">Segundo apellido:</label>
+                  <span class="helper-text" date-success="Lleno correctamente" data-error="Campo requerido"></span>
                 </div>
 
               </article>
@@ -187,17 +191,18 @@
                 <h3 class="primer-color-text">Info. Personal</h3>
 
                 <div class="input-field">
-                  <select name="sexo" id="sexo">
-                    <option value="" disabled>Seleccione una opción</option>
-                    <option value="hombre">Hombre</option>
-                    <option value="mujer">Mujer</option>
+                  <select name="sexo" id="sexo" required>
+                    <option disabled selected>Seleccione una opción</option>
+                    <option value="hombre" data-icon="img/man-symbol.png">Hombre</option>
+                    <option value="mujer" data-icon="img/woman-symbol.png">Mujer</option>
                   </select>
                   <label for="sexo">sexo</label>
                 </div>
 
                 <div class="input-field">
-                  <input type="text" name="nacimiento" id="nacimiento" class="datepicker">
+                  <input required type="text" name="nacimiento" id="nacimiento" class="datepicker validate">
                   <label for="nacimiento">Fecha de nacimiento</label>
+                  <span class="helper-text" date-success="Lleno correctamente" data-error="Campo requerido"></span>
                 </div>
 
               </article>
@@ -209,11 +214,13 @@
                 <h3 class="primer-color-text">Info. Adicional</h3>
 
                 <div class="input-field">
-                  <textarea name="adicional" id="adicional" style="height: 70px !important;"></textarea>
+                  <textarea name="adicional" 
+                      id="adicional" style="height: 85px !important;">
+                  </textarea>
                 </div>
 
                 <div class="center">
-                  <button class="btn primer-color" type="button">
+                  <button class="btn primer-color" type="submit">
                     <i class="material-icons right">send</i>
                     <span> guardar persona </span>
                   </button>
