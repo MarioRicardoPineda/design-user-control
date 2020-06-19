@@ -21,13 +21,9 @@ addEventListener('DOMContentLoaded', _ => {
       weekdaysAbbrev: ["D","L","M","M","J","V","S"]
     }
   });
-   let isInit = true
-  if (isInit) {
-    isInit = false
-    location.href="https://marioricardopineda.github.io/design-user-control/login.html"
-  }
 
 });
+
 
 // Mostrar contraseña
 const eyeIcon = id('eye-icon')
@@ -38,7 +34,6 @@ if (form) {
   form.addEventListener('submit', e => {
     e.preventDefault()
   })
-  
 }
 
 if (eyeIcon) {
